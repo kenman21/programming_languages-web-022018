@@ -10,7 +10,7 @@ def reformat_languages(languages)
     new_hash
   end 
   new_hash.each do |languages, type|
-      type[:style] = new_array[i]
+      type[:style] = [new_array[i]]
       i += 1
   end
   new_hash
