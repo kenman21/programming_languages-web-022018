@@ -4,8 +4,12 @@ def reformat_languages(languages)
   i = 0
   languages.each do |types, languagesandtypes|
     languagesandtypes.each do |language, type|
+        if new_hash.include?(language)
+          type[:style].push
+        
         new_hash[language] = type
         type[:style] = [types]
+        
     end 
     new_hash
   end 
